@@ -8,6 +8,8 @@
 
           <!--上左和下左-->
     <corners android:topLeftRadius="30dp"
+        android:bottomLeftRadius="30dp"
+        android:bottomRightRadius="30dp"
         android:topRightRadius="30dp" >
     </corners>
 

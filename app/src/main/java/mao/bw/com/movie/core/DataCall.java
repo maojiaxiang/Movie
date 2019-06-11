@@ -9,5 +9,5 @@ import javax.xml.transform.Result;
  */
 public interface DataCall<T> {
     void onSuccess(T result,Object...args);
-    void fail(T data,Object...args);
+    void fail(Result result,Object...args);
 }

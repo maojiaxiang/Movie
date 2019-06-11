@@ -33,11 +33,11 @@ public abstract class BaseMoviePresenter {
                         if ("0000".equals(o.status)){
                             dataCall.onSuccess(o.result);
                         }else {
-                            dataCall.fail(o);
                         }
                     }
                 });
     }
 
     protected abstract Observable getModel(IRequest iRequest,Object...args);
+
 }

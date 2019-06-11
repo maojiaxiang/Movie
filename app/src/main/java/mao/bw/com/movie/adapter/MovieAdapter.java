@@ -8,6 +8,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.resource.bitmap.RoundedCorners;
+import com.bumptech.glide.request.RequestOptions;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +28,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
     private Context context;
     private List<MovieBean> mList =new ArrayList<>();
 
-    public MovieAdapter(Context context, List<MovieBean> mList) {
+    public MovieAdapter(Context context) {
         this.context = context;
         this.mList = mList;
     }
@@ -38,12 +42,18 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int i) {
+       Glide.with(context).load(mList.get(i).getImageUrl()).into(viewHolder.img);
 
     }
+
 
     @Override
     public int getItemCount() {
         return mList.size();
+    }
+
+    public void addAll(List<MovieBean> result) {
+        mList.addAll(result);
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

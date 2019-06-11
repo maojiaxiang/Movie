@@ -1,7 +1,9 @@
-package mao.bw.com.movie;
+package mao.bw.com.movie.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import mao.bw.com.movie.R;
 
 public class MainActivity extends AppCompatActivity {
 

@@ -1,10 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
     android:layout_height="match_parent">
 
-    <recycler.coverflow.RecyclerCoverFlow
-        android:id="@+id/list"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="300dp"></recycler.coverflow.RecyclerCoverFlow>
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="@drawable/cinema_details"
+        >
+    <recycler.coverflow.RecyclerCoverFlow
+        android:layout_marginTop="60dp"
+        android:id="@+id/recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+    </recycler.coverflow.RecyclerCoverFlow>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="热门电影"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:padding="10dp"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/com_icon_next_default_xhdpi"
+            android:id="@+id/btn_img"
+            />
+    </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycle_view1"
+            ></android.support.v7.widget.RecyclerView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="正在热映"
+                android:textSize="18sp"
+                android:textColor="#000"
+                android:padding="10dp"
+                />
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/com_icon_next_default_xhdpi"
+                android:id="@+id/btn_img1"
+                />
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycle_view2"
+            ></android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>
