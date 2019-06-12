@@ -33,7 +33,7 @@ public class HttpUtil {
                 .build();
             retrofit = new Retrofit.Builder()
                     .client(okHttpClient)
-                    .baseUrl("http://172.17.8.100/movieApi/movie/v1/")
+                    .baseUrl("http://172.17.8.100/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                     .build();

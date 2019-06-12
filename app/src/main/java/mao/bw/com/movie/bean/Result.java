@@ -12,7 +12,7 @@ public class Result<T> {
    public String status="-1";
    public T result;
 
-    public Result(String message, String status) {
+    public Result(String message) {
         this.message = message;
         this.status = status;
     }

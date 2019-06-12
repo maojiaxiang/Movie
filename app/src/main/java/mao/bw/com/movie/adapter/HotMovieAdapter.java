@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import mao.bw.com.movie.R;
-import mao.bw.com.movie.bean.MovieBean;
+import mao.bw.com.movie.bean.movie.MovieBean;
 
 /**
  * @Auther: 毛佳翔

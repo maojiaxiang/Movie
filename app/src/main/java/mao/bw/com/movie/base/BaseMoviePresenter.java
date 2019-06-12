@@ -5,6 +5,7 @@ import org.greenrobot.greendao.annotation.Id;
 import io.reactivex.Observable;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.functions.Consumer;
+import io.reactivex.functions.Function;
 import io.reactivex.schedulers.Schedulers;
 import mao.bw.com.movie.bean.Result;
 import mao.bw.com.movie.core.DataCall;
@@ -27,6 +28,13 @@ public abstract class BaseMoviePresenter {
         getModel(iRequest,args)
                 .subscribeOn(Schedulers.newThread())
                 .observeOn(AndroidSchedulers.mainThread())
+                .onErrorReturn(new Function<Throwable,Result>() {
+                    @Override
+                    public Result apply(Throwable object) throws Exception {
+                        object.printStackTrace();
+                        return new Result(object.getMessage());
+                    }
+                })
                 .subscribe(new Consumer<Result>() {
                     @Override
                     public void accept(Result o) throws Exception {

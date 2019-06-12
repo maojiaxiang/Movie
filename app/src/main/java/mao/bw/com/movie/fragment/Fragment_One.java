@@ -18,7 +18,7 @@ import javax.xml.transform.Result;
 import mao.bw.com.movie.R;
 import mao.bw.com.movie.adapter.HotMovieAdapter;
 import mao.bw.com.movie.adapter.MovieAdapter;
-import mao.bw.com.movie.bean.MovieBean;
+import mao.bw.com.movie.bean.movie.MovieBean;
 import mao.bw.com.movie.core.DataCall;
 import mao.bw.com.movie.presenter.MoviePresenter;
 import recycler.coverflow.RecyclerCoverFlow;

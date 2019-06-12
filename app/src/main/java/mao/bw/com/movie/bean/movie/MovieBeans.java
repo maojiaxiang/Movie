@@ -1,4 +1,4 @@
-package mao.bw.com.movie.bean;
+package mao.bw.com.movie.bean.movie;
 
 /**
  * @Auther: 毛佳翔
