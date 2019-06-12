@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="15dp"
+        android:background="@mipmap/bjbj"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="110dp"
+            android:layout_height="160dp"
+            android:layout_margin="10dp"
+            android:id="@+id/a_img"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="铁血战士"
+                    android:textColor="#fff"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/a_name" />
+
+                <CheckBox
+                    android:layout_alignParentRight="true"
+                    android:layout_width="35dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/bg_cinema_like"
+                    android:button="@null" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                android:text="剪辑"
+                android:id="@+id/a_sm" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

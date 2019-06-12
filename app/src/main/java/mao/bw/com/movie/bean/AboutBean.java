@@ -2,20 +2,20 @@ package mao.bw.com.movie.bean;
 
 /**
  * @Auther: 毛佳翔
- * @Date: 2019/6/10 20:27:04
+ * @Date: 2019/6/12 14:22:52
  * @Description: 描述信息
  */
-public class MovieBeans {
-  /*  followMovie": 2,
-            "id": 17,
-            "imageUrl": "http://172.17.8.100/images/movie/stills/ftfb3/ftfb(3)1.jpg",
-            "name": "反贪风暴3",
-            "rank": 0,
-            "releaseTime": 1537545600000,
-            "releaseTimeShow": "2018-09-22",
-            "summary": "ICAC (廉政公署) 陆志廉（古天乐 饰），JFIU (联合财富情报组) 刘保强（张智霖 饰）分别侦查贪污及洗黑钱案，但苦无线索，这时廉政公署L组 (内部纪律调查组) 程德明（郑嘉颖 饰）收到举报，指陆志廉收贿1200万，陆无法辩解实时停职。刘发现陆被诬陷，并跟一直调查的洗黑钱案有着千丝万缕关系，同时怀疑银行主任游子新（栢天男 饰）协助罪恶集团洗黑钱；陆冒险搜集罪证却遭禁锢，命悬一线.......",
-            "type": 2*/
-  private String followMovie;
+public class AboutBean {
+    /*	"followMovie": 2,
+                "id": 16,
+                "imageUrl": "http://172.17.8.100/images/movie/stills/dzd6qmwj/dzd6qmwj1.jpg",
+                "name": "碟中谍6：全面瓦解",
+                "rank": 0,
+                "releaseTime": 1569081600000,
+                "releaseTimeShow": "2019-09-22",
+                "summary": "有时好意会造成恶果，人反而被自己所造成的结果所困扰。伊桑·亨特（汤姆·克鲁斯 饰）和他的IMF团队（亚历克·鲍德温、西蒙·佩吉、文·瑞姆斯）将在最新的电影《碟中谍6：全面瓦解》中再度回归，他们会与观众们熟悉的盟友（丽贝卡·弗格森、米歇尔·莫娜汉）一起与时间赛跑，应对一次任务中出现的意外。亨利·卡维尔、安吉拉·贝塞特和凡妮莎·柯比也将加入本片的演员阵容，电影制片人克里斯托夫·迈考利将会再度担任导演。",
+                "type": 2*/
+    private String followMovie;
     private String id;
     private String imageUrl;
     private String name;

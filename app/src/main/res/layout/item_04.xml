@@ -3,21 +3,21 @@
     android:layout_width="240dp"
     android:orientation="vertical"
     android:layout_marginLeft="20sp"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
     <ImageView
         android:layout_width="200dp"
         android:layout_height="240dp"
-        android:id="@+id/img"
+        android:id="@+id/img4"
         />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
-        android:id="@+id/name"
+        android:id="@+id/name4"
         android:padding="10dp"
-        android:text="name"
+        android:text="name4"
         android:gravity="center"
         />
 </LinearLayout>

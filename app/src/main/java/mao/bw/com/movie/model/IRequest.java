@@ -3,8 +3,9 @@ package mao.bw.com.movie.model;
 import java.util.List;
 
 import io.reactivex.Observable;
+import mao.bw.com.movie.bean.AboutBean;
+import mao.bw.com.movie.bean.BeingBean;
 import mao.bw.com.movie.bean.MovieBean;
-import mao.bw.com.movie.bean.MovieBeans;
 import mao.bw.com.movie.bean.Result;
 import retrofit2.http.GET;
 
@@ -14,10 +15,13 @@ import retrofit2.http.GET;
  * @Description: 描述信息
  */
 public interface IRequest {
+    //热门影院
     @GET("findHotMovieList?page=1&count=10")
     Observable<Result<List<MovieBean>>>findHotMovieList();
-
-   @GET("findReleaseMovieList?page=1&count=5")
-    Observable<Result<List<MovieBeans>>>findReleaseMovieList();
-
+    //正在上映
+    @GET("findReleaseMovieList?page=1&count=5")
+    Observable<Result<List<BeingBean>>>findReleaseMovieList();
+    //即将上映
+    @GET("findComingSoonMovieList?page=1&count=5")
+    Observable<Result<List<AboutBean>>>findComingSoonMovieList();
 }
